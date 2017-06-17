@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+   <package name="blog" namespace="/" extends="json-default">
+   		<action name="user_*" class="userAction" method="{1}">
+   			<result name="registSuccess">/WEB-INF/admin/regist_success.jsp</result>
+   			<result name="login">/admin/login.jsp</result>
+   			<result name="loginSuccess">/WEB-INF/admin/login_success.jsp</result>
+   		</action>
+   		<action name="article_*" class="articleAction" method="{1}">
+   			<result name="list">/WEB-INF/article/list.jsp</result>
+   			<result name="deleteSuccess">/WEB-INF/article/delete_success.jsp</result>
+   			<result name="fault">/WEB-INF/article/fault.jsp</result>
+   			<result name="show">/WEB-INF/article/show.jsp</result>
+   			<result name="updateSuccess">/WEB-INF/article/update_success.jsp</result>
+   			<result name="addSuccess">/WEB-INF/article/add_success.jsp</result>
+   			<result name="toAdd">/WEB-INF/article/article_add.jsp</result>
+   		</action>
+   		<action name="page_*" class="pageAction" method="{1}">
+   			<result name="index">/main.jsp</result>
+   			<result name="post">/post.jsp</result>
+   			<result name="top">/top.jsp</result>
+   			<result name="login">/master/login.jsp</result>
+   			<result name="info">/info.jsp</result>
+   			<result name="message" type="json">
+   				<param name="root">list</param>
+   			</result>
+   		</action>
+   		<action name="master_*" class="masterAction" method="{1}">
+   			<result name="loginSuccess">/master/login_success.jsp</result>
+   			<result name="login">/master/login.jsp</result>
+   			<result name="registSuccess">/master/regist_success.jsp</result>
+   			<result name="loginFault">/master/login_fault.jsp</result>
+   		</action>
+    </package>
+</struts>

@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "微软雅黑";
+}
+@media (max-width: 979px) {
+    .form-control{
+        margin-left:28%;
+        margin-top: -39px;
+    }
+    .sex_radio{
+    position:absolute;
+    margin-left:15%;
+    margin-top:-39px;
+    width:30%;
+}
+.sex_control{
+    margin-left:25%;
+}
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+    .form-control{
+        margin-left:24%;
+        margin-top: -39px;
+    }
+       .sex_radio{
+    position:absolute;
+    margin-left:13.5%;
+    margin-top:-39px;
+    width:30%;
+}
+.sex_control{
+    margin-left:25%;
+}
+}
+@media (min-width: 1200px) { 
+    .form-control{
+        margin-left:20%;
+        margin-top: -39px;
+    }
+    .sex_radio{
+    position:absolute;
+    margin-left:11.5%;
+    margin-top:-39px;
+    width:30%;
+}
+.sex_control{
+    margin-left:25%;
+}
+    
+}
+#login{
+    position:absolute;
+    margin-left:10%;
+    border-radius:5%;
+    background-color:#00AAEE;
+}
+#regist{
+    position:absolute;
+    margin-left:34%;
+    border-radius:5%;
+}
+#contactForm{
+    margin-left:20%;
+}
